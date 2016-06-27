@@ -1,0 +1,233 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+
+<link href="resource/css/bootstrap.min.css" rel="stylesheet" />
+<link href="resource/css/bootstrap.css" rel="stylesheet" />
+<link href="resource/css/app.css" rel="stylesheet" />
+<link href="resource/css/style2.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Online Book</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<li class="active"><a href="#">Langue <span
+							class="sr-only">(current)</span></a></li>
+					<li><a href="#"><img title="Français" alt="Français"
+							src="resource/images/icon-fr.png" /></a></li>
+					<li><a href="#"><img title="English" alt="English"
+							src="resource/images/icon-gb.png" /></a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Categories<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Rechercher</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="panier"><span><img title="Panier" alt="Panier"
+							src="resource/images/icon-cart.png" />Mon panier (0)</span></li>
+					<li><a href="${lougoutUrl}"><span
+							class="glyphicon glyphicon-user"></span> Connexion</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<nav class="navbar navbar-inverse sidebar visible-lg visible-md"
+		role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-sidebar-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand  glyphicon glyphicon-home" href="#">Acceuil</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-sidebar-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<!-- 					<li class="active"><a href="#">Acceuil<span -->
+					<!-- 							style="font-size: 16px;" -->
+					<!-- 							class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li> -->
+					<li><a href="#">Enfant<span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+					<li><a href="#">Technologies<span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Tourisme & Voyage <span class="caret"></span><span
+							style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-option-horizontal"></span></a>
+						<ul class="dropdown-menu forAnimate" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul></li>
+					<li><a href="#">Magazines<span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+					<li><a href="#">Livre de Poche<span
+							style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+					<li><a href="#">BD & Humour<span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+
+					<li><a href="#">Educations<span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Settings <span class="caret"></span><span
+							style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+						<ul class="dropdown-menu forAnimate" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul></li>
+					<li><a href="#">Contact <span style="font-size: 16px;"
+							class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="main">
+		<!-- Content Here -->
+	</div>
+	<div class="container">
+		<h2>Livres</h2>
+		<div class="row">
+			<div class="col-md-4 col-sm-10">
+				<a href="pulpitrock.jpg" class="thumbnail">
+					<p>Pulpit Rock: A famous tourist attraction in Forsand,
+						Ryfylke, Norway.</p> <img src="resource/images/Angela tome 3.jpg"
+					alt="Pulpit Rock" style="width: 150px; height: 150px">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-10">
+				<a href="moustiers-sainte-marie.jpg" class="thumbnail">
+					<p>Moustiers-Sainte-Marie: Considered as one of the "most
+						beautiful villages of France".</p> <img
+					src="resource/images/Le Roi des Andes.jpg"
+					alt="Moustiers Sainte Marie" style="width: 150px; height: 150px">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-10">
+				<a href="cinqueterre.jpg" class="thumbnail">
+					<p>The Cinque Terre: A rugged portion of coast in the Liguria
+						region of Italy.</p> <img src="resource/images/Plaies et bosses.jpg"
+					alt="Cinque Terre" style="width: 150px; height: 150px">
+				</a>
+			</div>
+
+			<div class="col-md-4 col-sm-10">
+				<a href="cinqueterre.jpg" class="thumbnail">
+					<p>The Cinque Terre: A rugged portion of coast in the Liguria
+						region of Italy.</p> <img
+					src="resource/images/Les Amours auvergnates.jpg" alt="Cinque Terre"
+					style="width: 150px; height: 150px">
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<h3 class="footertext">About Us:</h3>
+				<br>
+				<div class="col-md-4">
+					<div align="center">
+						<img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle"
+							alt="the-brains"> <br>
+						<h4 class="footertext">Programmer</h4>
+						<p class="footertext">
+							You can thank all the crazy programming here to this guy.<br>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div align="center">
+						<img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle"
+							alt="..."> <br>
+						<h4 class="footertext">Artist</h4>
+						<p class="footertext">
+							All the images here are hand drawn by this man.<br>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div align="center">
+						<img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle"
+							alt="..."> <br>
+						<h4 class="footertext">Designer</h4>
+						<p class="footertext">
+							This pretty site and the copy it holds are all thanks to this
+							guy.<br>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p>
+
+					<div align="center"><a href="#">Contact Stuff Here</a>
+
+					<p class="footertext">Copyright 2014</p>
+				</div>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="resource/js/jquery-3.0.0.min.js"></script>
+	<script src="resource/js/bootstrap.min.js"></script>
+
+</body>
+</html>

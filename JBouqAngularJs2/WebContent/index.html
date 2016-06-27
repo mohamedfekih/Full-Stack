@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html ng-app="appJeBouquine">
+
+<head>
+<meta charset="utf-8" />
+<title>JeBouquine</title>
+<meta name="description"
+	content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+<link href="resource/css/bootstrap.min.css" rel="stylesheet" />
+<link href="resource/css/angular-busy.css" rel="stylesheet" />
+<link href="resource/css/font-awesome.min.css" rel="stylesheet" />
+<!--<link rel="stylesheet" href="css/app.css" type="text/css" />-->
+
+<link href="resource/css/app.css" rel="stylesheet" />
+
+<!--<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>-->
+<!--http://jsfiddle.net/rarteaga/ofz9Lgom/-->
+
+</head>
+<body ng-controller="mainControleur">
+	<!-- **Top Bar** -->
+	<div class="top-bar type5">
+		<!-- **container - Starts** -->
+		<div class="container">
+
+
+			<ul class="top-contact-details alignleft">
+				<li class="hidden-xs"><i class="fa fa-map-marker"></i><span>Avenue
+						Habib Bourguiba, Tunisie</span></li>
+				<li class="hidden-xs"><i class="fa fa-mobile"></i><span>(+216)
+						71 000 000</span></li>
+				<li><i class="fa fa-envelope"></i><a href="#">Contact@JeBouquine.com</a></li>
+			</ul>
+			<ul class="top-social-icons alignright">
+				<li><a href="#" title="facebook"> <i
+						class="fa fa-facebook-square"></i>
+				</a></li>
+				<li><a href="#" title="twitter"> <i class="fa fa-twitter"></i>
+				</a></li>
+				<li><a href="#" title="pinterest"> <!--<i class="fa fa-pinterest"></i>-->
+				</a></li>
+				<li><a href="#" title="youtube"> <i class="fa fa-youtube"></i>
+				</a></li>
+			</ul>
+			<div class="service-option alignright">
+				<!--<button class="btn btn-danger" >Customer Services <span class="fa fa-user"></span></button>-->
+				<a class="btn btn-danger" href="../html/Authentification">Créer
+					un compte<span class="fa fa-user margin15"></span>
+				</a>
+			</div>
+
+		</div>
+		<!-- **container - End** -->
+	</div>
+	<!-- **Top Bar - End** -->
+	<!-- **Header** -->
+
+	<div class="row nav1  " id="header-wrapper">
+		<nav class="navbar navbar-inverse header6" id="top-menu"
+			role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header ">
+					<button type="button" class="navbar-toggle"
+						data-target="#navbarCollapse" data-toggle="collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+
+					</button>
+				</div>
+				<!-- Collapse navigation -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#/Accueil">Accueil</a></li>
+						<!--<li class="Titre">  <span>JeBouquine <i class="fa fa-book" style="color:aliceblue"></i></span> </li>-->
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Tous nos rayons<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/LesLivres/Jeunesse">Lecture jeunesse</a></li>
+								<li><a href="#/LesLivres/SciencesTechniques">Sciences &
+										Techniques</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#/LesLivres/DroitEconomieGestion">Droit,
+										Economie & Gestion</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#/LesLivres/VoyagesNature">Voyages &
+										Nature</a></li>
+								<li><a href="#/LesLivres/ScolairePedagogie">Scolaire &
+										Pédagogie</a></li>
+
+							</ul></li>
+
+						<li><a href="#/Contact">Contact</a></li>
+						<li><a href="#/BesoinAide">Besoin d'aide ?</a></li>
+
+						<!-- <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+
+                                    <ul class="dropdown-menu">
+                                    <li>
+                                    <a href="#">Example1</a>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    -->
+					</ul>
+					<!-- Search box -->
+
+					<ul class="top-shop-cart alignright hidden-xs hidden-sm"
+						style="z-index: 99">
+						<li class="dt-sc-cart"><a href="#"><i
+								class="fa fa-shopping-cart"></i><span class="badge"
+								style="margin-left: 10px; margin-top: 0px;">3 </span></a>
+							<div class="shopping-cart">
+								<ul class="product_cart_list">
+									<li><a> <img
+											src="http://placehold.it/70x80&text=image" alt="image" />Titre
+											1
+									</a> <a href=""><span class="remove fa fa-times"
+											style="color: #ffffff; background-color: red"></span></a>
+										<div class="product-details">
+
+											<p class="quantity">
+												<span class="amount">20 TND</span> X 3
+											</p>
+										</div></li>
+								</ul>
+								<p class="total">
+									Total<span class="amount">60 TND</span>
+								</p>
+								<p class="buttons">
+									<a href="#">Valider</a>
+								</p>
+							</div></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search"
+								name="srch-term" id="srch-term">
+							<div class="input-group-btn">
+								<button class="btn btn-info" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- End container-fluid -->
+		</nav>
+		<!-- End navbar-inverse -->
+	</div>
+
+
+
+	<div class="container" style="width: 100%; padding: -15px -15px">
+		<div ng-view></div>
+	</div>
+	<div class="row top-bar type5">
+		<div class="text-center col-lg-12" style="color: black !important;">
+
+
+			<ul class="top-contact-details alignleft">
+				<li class="hidden-xs"><i class="fa fa-map-marker"></i><span>Avenue
+						Habib Bourguiba, Tunisie</span></li>
+				<li class="hidden-xs"><i class="fa fa-mobile"></i><span>(+216)
+						71 000 000</span></li>
+				<li><i class="fa fa-envelope"></i><a href="#">Contact@JeBouquine.com</a></li>
+			</ul>
+			<span horloge></span>
+		</div>
+
+	</div>
+	<script src="resource/js/jquery-1.9.1.js"></script>
+	<script src="resource/js/bootstrap.js"></script>
+	<script src="resource/js/angular.js"></script>
+	<script src="resource/js/angular-route.js"></script>
+	<script src="resource/app/app.js"></script>
+	<script src="resource/js/route.js"></script>
+	<script src="resource/app/Controleur/accueilControleur.js"></script>
+	<script src="resource/app/Controleur/besoinAideControleur.js"></script>
+	<script src="resource/app/Controleur/compteControleur.js"></script>
+	<script src="resource/app/Controleur/compteControleur.js"></script>
+	<script src="resource/app/Controleur/contactControleur.js"></script>
+	<script src="resource/app/Controleur/detailControleur.js"></script>
+	<script src="resource/app/Controleur/livresControleur.js"></script>
+	<script src="resource/app/Controleur/mainControleur.js"></script>
+	<script src="resource/app/Service/PanierService.js"></script>
+</body>
+</html>

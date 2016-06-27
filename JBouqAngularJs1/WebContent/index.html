@@ -1,0 +1,89 @@
+﻿<html ng-app="appDemo">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+<link href="resource/css/bootstrap.min.css" rel="stylesheet" />
+<link href="resource/css/bootstrap.css" rel="stylesheet" />
+
+
+</head>
+<body ng-controller="DemoControleur">
+	<div>
+		<div class="container">
+			<div class="row" style="margin-top: 40px;">
+				<h3 class="col-lg-12 text-center">
+					<span><i class="glyphicon glyphicon-user"></i></span> Créer un
+					compte
+				</h3>
+			</div>
+		</div>
+		<form name="formDemo" style="margin-top: 40px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="form-group col-lg-2 col-lg-offset-1">
+							<label class="control-label">Sexe</label> <select
+								class="form-control"
+								ng-options="s.Code as s.Libelle for s in Sexes"
+								ng-model="Compte.Sexe" ng-required="true"></select>
+							<!-- 							<select -->
+							<!-- 								class="form-control"> -->
+							<!-- 								<option value="H">Homme</option> -->
+							<!-- 								<option value="F">Femme</option> -->
+							<!-- 							</select> -->
+						</div>
+						<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<label class="control-label" for="prenom">Prénom</label> <input
+								type="text" class="form-control" id="prenom" name="prenom"
+								ng-model="Compte.Prenom" "ng-required="true" ng-maxlength="50"
+								ng-minlength="6">
+						</div>
+						<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+							<label class="control-label" for="txtNom">Nom</label> <input
+								type="text" class="form-control" id="nom" name="nom"
+								ng-model="Compte.Nom" "ng-required="true" ng-maxlength="50"
+								ng-minlength="6">
+<!-- 							<div ng-messages="formDemo.nom.$error" class="text-danger"> -->
+<!-- 								<div ng-message="required">Champ requis</div> -->
+<!-- 								<div ng-message="minlength">Valeur trop courte</div> -->
+<!-- 								<div ng-message="maxlength">Valeur trop longue</div> -->
+<!-- 							</div> -->
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="form-group col-lg-10 col-md-10 col-lg-offset-1"
+							ng-class="{'has-error':formDemo.email.$invalid,
+                                 'has-success':formDemo.email.$valid}">
+							<label class="control-label" for="email">Adresse e-mail</label> <input
+								type="email" class="form-control" id="email" name="email"
+								ng-model="Compte.Email" ng-required="true">
+							<div>
+								<span class="text-danger" ng-show="formDemo.email.$error.email">
+									non valide </span> <span class="text-danger"
+									ng-show="formDemo.email.$error.required"> Le mail est
+									obligatoire </span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class='text-center'>
+							<div class="btn-group">
+								<button type="button" id="btnValide" name="btnValide"
+									class="btn btn-primary center-block" ng-click="Valider()">Valider</button>
+								<button type="button" id="btnAnnuler" name="btnAnnuler"
+									class="btn btn-info center-block" ng-click="Annuler()">Annuler</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<script src="resource/js/angular.js"></script>
+	<script src="resource/app/app.js"></script>
+	<script src="resource/app/Controleur/DemoControleur.js"></script>
+</body>
+</html>
