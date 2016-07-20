@@ -1,0 +1,11 @@
+{
+  "name": "JeBouquine",
+  "version": "0.0.1",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express.js": "^1.0.0",
+    "mongoose": "^4.5.5",
+    "pow-mongodb-fixtures": "^0.13.0"
+  }
+}
